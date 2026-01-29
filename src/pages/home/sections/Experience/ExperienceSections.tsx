@@ -5,7 +5,7 @@ import { Briefcase } from "lucide-react";
 const experiences = [
   {
     company: "The Sociyo",
-    role: "Web Developer & IT Manager",
+    role: "Software Developer & IT Manager",
     duration: "June 2025 – Present",
     location: "Bhopal, India",
     points: [
@@ -18,7 +18,7 @@ const experiences = [
   },
   {
     company: "SSS Technologies",
-    role: "Junior Web Developer",
+    role: "Software Developer",
     duration: "August 2024 – July 2025",
     location: "Bhopal, India",
     points: [
@@ -31,7 +31,7 @@ const experiences = [
   },
   {
     company: "Gramhal",
-    role: "Data Checker",
+    role: "Database Manager",
     duration: "October 2023 – May 2024",
     location: "Bhopal, India",
     points: [
@@ -54,18 +54,18 @@ const experiences = [
       "Ensured data accuracy, compliance, and smooth cross-team communication.",
     ],
   },
-  {
-    company: "UNICEF",
-    role: "Incharge Supervisor",
-    duration: "November 2021 – March 2022",
-    location: "Bhopal, India",
-    points: [
-      "Supervised and coordinated a team of 8 members for daily operations.",
-      "Acted as a communication bridge between state and district-level teams.",
-      "Collected and consolidated COVID-19 vaccination data from field teams.",
-      "Prepared daily reports, summaries, and presentations for state authorities.",
-    ],
-  },
+  // {
+  //   company: "UNICEF",
+  //   role: "Incharge Supervisor",
+  //   duration: "November 2021 – March 2022",
+  //   location: "Bhopal, India",
+  //   points: [
+  //     "Supervised and coordinated a team of 8 members for daily operations.",
+  //     "Acted as a communication bridge between state and district-level teams.",
+  //     "Collected and consolidated COVID-19 vaccination data from field teams.",
+  //     "Prepared daily reports, summaries, and presentations for state authorities.",
+  //   ],
+  // },
 ];
 
 const ExperienceSection = () => {

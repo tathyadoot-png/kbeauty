@@ -105,7 +105,7 @@ const HomePage = () => {
                   <p className="text-[10px] uppercase tracking-widest text-text-muted font-bold">Projects Built</p>
                 </div>
                 <div className="text-center border-l border-border">
-                  <h3 className="text-2xl font-heading font-bold text-primary">2+</h3>
+                  <h3 className="text-2xl font-heading font-bold text-primary">4+</h3>
                   <p className="text-[10px] uppercase tracking-widest text-text-muted font-bold">Years Exp.</p>
                 </div>
               </div>
