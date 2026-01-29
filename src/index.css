@@ -1,0 +1,166 @@
+/* Google Fonts Import: Inter (Body), Space Grotesk (Tech), Playfair (Premium Serif), aur Dancing Script (Fancy Script) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,700&family=Dancing+Script:wght@700&family=Syne:wght@700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== DARK DEV PORTFOLIO COLOR SYSTEM ===== */
+@layer base {
+  :root {
+    --star-color: #14b8a6;
+    --color-bg: #0b0f14;
+    --color-bg-soft: #111827;
+    --color-primary: #14b8a6;
+    --color-primary-soft: #2dd4bf;
+    --color-text: #e5e7eb;
+    --color-text-muted: #9ca3af;
+    --color-border: #1f2933;
+  }
+
+  body {
+    @apply bg-bg text-text antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Section Headings - Tech Vibe */
+  h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.02em;
+    @apply font-bold;
+  }
+
+  /* Main Hero Heading - Bold & Impactful */
+  h1 {
+    font-family: 'Syne', 'Space Grotesk', sans-serif;
+    letter-spacing: -0.04em;
+    @apply font-black leading-[1.1];
+  }
+
+  /* ======= FANCY CLASSES ======= */
+
+  /* 1. Cursive Fancy (Jaise tumne manga tha - use for 1-2 words) */
+  .font-fancy-script {
+    font-family: 'Dancing Script', cursive;
+    @apply text-primary capitalize;
+    letter-spacing: 0;
+  }
+
+  /* 2. Elegant Serif (Premium fancy look) */
+  .font-fancy-serif {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    @apply font-medium;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+::selection {
+  background-color: #14b8a6;
+  color: #0b0f14;
+}
+
+/* Wrapper */
+.star-wrapper {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;          /* ❗ NOT -1 */
+  pointer-events: none;
+  background: transparent;
+}
+
+/* Shared styles */
+#stars,
+#stars2,
+#stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  animation: animStar linear infinite;
+}
+
+#stars::after,
+#stars2::after,
+#stars3::after {
+  content: "";
+  position: absolute;
+  top: 100vh;
+  background: transparent;
+}
+
+/* SMALL STARS */
+#stars,
+#stars::after {
+  width: 1px;
+  height: 1px;
+  box-shadow:
+    10px 20px var(--star-color),
+    120px 340px var(--star-color),
+    240px 900px var(--star-color),
+    360px 1500px var(--star-color),
+    480px 800px var(--star-color),
+    600px 1200px var(--star-color),
+    720px 300px var(--star-color),
+    840px 1600px var(--star-color),
+    960px 500px var(--star-color),
+    1080px 1300px var(--star-color),
+    1200px 200px var(--star-color),
+    1320px 900px var(--star-color),
+    1440px 1500px var(--star-color),
+    1560px 600px var(--star-color),
+    1680px 1100px var(--star-color),
+    1800px 300px var(--star-color),
+    1920px 1400px var(--star-color);
+  animation-duration: 60s;
+}
+
+
+/* MEDIUM STARS */
+#stars2,
+#stars2::after {
+  width: 2px;
+  height: 2px;
+  box-shadow:
+    200px 400px var(--star-color),
+    700px 300px var(--star-color),
+    1200px 900px var(--star-color),
+    1600px 200px var(--star-color);
+  animation-duration: 100s;
+}
+
+/* LARGE STARS */
+#stars3,
+#stars3::after {
+  width: 3px;
+  height: 3px;
+  box-shadow:
+    300px 700px var(--star-color),
+    800px 1100px var(--star-color),
+    1400px 500px var(--star-color);
+  animation-duration: 150s;
+}
+
+/* KEYFRAMES */
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* section {
+  scroll-margin-top: 80px; 
+} */
